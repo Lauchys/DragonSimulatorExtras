@@ -1,0 +1,23 @@
+name: DragonSimulatorExtras
+version: '1.4'
+main: dev.lauchy.dragonsimulatorextras.Main
+author: Lauchy
+website: https://lauchy.dev/
+description: Extra staff utilities for Dragon Simulator
+
+commands:
+  forcefield:
+    aliases: [ ff ]
+  scaffold:
+    aliases: [scaff]
+  togglepickup:
+    permission: seabot.basic.admin
+    aliases: [ tpu, tpickup, pickup ]
+  credits:
+    permission: seabot.basic.admin
+    description: Sends a the minecraft game completion screen packet to a player
+  demo:
+    permission: seabot.basic.admin
+    description: Sends the minecraft demo screen packet to a player
+  guardian:
+    permission: seabot.basic.admin

@@ -1,0 +1,13 @@
+dev\lauchy\dragonsimulatorextras\Utils.class
+dev\lauchy\dragonsimulatorextras\DemoCommand.class
+dev\lauchy\dragonsimulatorextras\Main.class
+dev\lauchy\dragonsimulatorextras\ForcefieldCommand.class
+dev\lauchy\dragonsimulatorextras\TogglePickupCommand.class
+dev\lauchy\dragonsimulatorextras\GuardianCommand.class
+dev\lauchy\dragonsimulatorextras\CreditsCommand.class
+dev\lauchy\dragonsimulatorextras\ScaffoldCommand.class
+dev\lauchy\dragonsimulatorextras\AbstractCommand.class
+dev\lauchy\dragonsimulatorextras\Utils$1.class
+dev\lauchy\dragonsimulatorextras\ScaffoldCommand$1.class
+dev\lauchy\dragonsimulatorextras\AbstractCommand$CommandRestriction.class
+dev\lauchy\dragonsimulatorextras\ForcefieldCommand$1.class
