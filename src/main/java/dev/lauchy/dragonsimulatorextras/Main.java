@@ -1,13 +1,8 @@
 package dev.lauchy.dragonsimulatorextras;
 
-import dev.lauchy.dragonsimulatorextras.pagination.PlayerMenuUtility;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.HashMap;
-
 public final class Main extends JavaPlugin {
-    private static final HashMap<Player, PlayerMenuUtility> playerMenuUtilityMap = new HashMap<>();
     private static Main plugin;
 
     @Override
@@ -33,19 +28,6 @@ public final class Main extends JavaPlugin {
         this.getCommand("demo").setExecutor(new DemoCommand(this));
         this.getCommand("guardian").setExecutor(new GuardianCommand(this));
         this.getServer().getPluginManager().registerEvents(new TogglePickupCommand(this), this);
-    }
-
-    public static PlayerMenuUtility getPlayerMenuUtility(Player p) {
-        PlayerMenuUtility playerMenuUtility;
-
-        if (playerMenuUtilityMap.containsKey(p)) {
-            return playerMenuUtilityMap.get(p);
-        } else {
-            playerMenuUtility = new PlayerMenuUtility(p);
-            playerMenuUtilityMap.put(p, playerMenuUtility);
-
-            return playerMenuUtility;
-        }
     }
 
     public static Main getPlugin() {
